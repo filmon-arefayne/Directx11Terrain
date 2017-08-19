@@ -35,7 +35,7 @@ GPU::~GPU()
 
 void GPU::Clear()
 {
-	float colore[4] = { 0.0f,0.2f,1.0f,1.0f };
+	float colore[4] = { 0.0f,0.2f,0.6f,1.0f };
 	deviceContext->ClearRenderTargetView(RTV.Get(), colore);
 	deviceContext->ClearDepthStencilView(DSV.Get(), D3D11_CLEAR_DEPTH | D3D11_CLEAR_STENCIL, 1.0f, 0);
 }
